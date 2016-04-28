@@ -1,8 +1,4 @@
 package org.ithinking.banana.ishow.api.conf;
-
-/**
- * @author agan
- */
 import com.github.pagehelper.PageHelper;
 import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -24,8 +20,8 @@ import java.util.Properties;
 /**
  * MyBatis基础配置
  *
- * @author liuzh
- * @since 2015-12-19 10:11
+ * @author agan
+ * @since 2016-04-28
  */
 @Configuration
 @EnableTransactionManagement
