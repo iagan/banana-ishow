@@ -11,5 +11,12 @@
 
     <artifactId>ishow-service</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.ithinking</groupId>
+            <artifactId>ishow-mapper</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

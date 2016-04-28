@@ -15,7 +15,7 @@
 
         <dependency>
             <groupId>org.ithinking</groupId>
-            <artifactId>ishow-model</artifactId>
+            <artifactId>ishow-service</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
 
