@@ -27,6 +27,9 @@
         <mysql.version>5.1.38</mysql.version>
         <alibaba.druid.version>1.0.18</alibaba.druid.version>
         <HikariCP.version>2.4.5</HikariCP.version>
+
+        <!-- springloaded -->
+        <springloaded.version>1.2.6.RELEASE</springloaded.version>
     </properties>
 
     <dependencies>
