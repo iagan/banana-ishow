@@ -24,16 +24,18 @@
 
 package org.ithinking.banana.ishow.api.conf;
 
+import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import tk.mybatis.spring.mapper.MapperScannerConfigurer;
+
 
 import java.util.Properties;
 
 /**
- * MyBatis扫描接口，使用的tk.mybatis.spring.mapper.MapperScannerConfigurer，如果你不使用通用Mapper，可以改为org.xxx...
- *
+ * MyBatis扫描接口
+ *  通用Mapper : tk.mybatis.spring.mapper.MapperScannerConfigurer
+ *  MyBatis Mapper : org.mybatis.spring.mapper.MapperScannerConfigurer
  * @author agan
  * @since 2016-04-28
  */
@@ -47,11 +49,11 @@ public class MyBatisMapperScannerConfig {
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
         mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
         mapperScannerConfigurer.setBasePackage("org.ithinking.banana.ishow.mapper");
-        Properties properties = new Properties();
+        //Properties properties = new Properties();
         //properties.setProperty("mappers", "tk.mybatis.springboot.util.MyMapper");
-        properties.setProperty("notEmpty", "false");
-        properties.setProperty("IDENTITY", "MYSQL");
-        mapperScannerConfigurer.setProperties(properties);
+        //properties.setProperty("notEmpty", "false");
+        //properties.setProperty("IDENTITY", "MYSQL");
+        //mapperScannerConfigurer.setProperties(properties);
         return mapperScannerConfigurer;
     }
 
