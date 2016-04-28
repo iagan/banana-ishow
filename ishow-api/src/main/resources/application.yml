@@ -15,9 +15,9 @@ spring:
 #        type: com.alibaba.druid.pool.DruidDataSource
 #        driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
         name: cashbox
-        url: jdbc:mysql://127.0.0.1:3306/cashbox?characterEncoding=utf-8
-        username: cashbox
-        password: cashbox_2015
+        url: jdbc:mysql://127.0.0.1:3306/banana?characterEncoding=utf-8
+        username: root
+        password: aganmysql
         # 使用druid数据源
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
