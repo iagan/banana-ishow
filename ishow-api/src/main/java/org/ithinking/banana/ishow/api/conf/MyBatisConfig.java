@@ -35,6 +35,10 @@ public class MyBatisConfig implements TransactionManagementConfigurer {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
         bean.setTypeAliasesPackage("org.ithinking.banana.ishow.model");
+        org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration();
+        configuration.setMapUnderscoreToCamelCase(true);
+
+        bean.setConfiguration(configuration);
 
         //分页插件
         PageHelper pageHelper = new PageHelper();
