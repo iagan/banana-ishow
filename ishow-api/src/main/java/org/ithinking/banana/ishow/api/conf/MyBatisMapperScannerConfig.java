@@ -27,6 +27,7 @@ public class MyBatisMapperScannerConfig {
         //properties.setProperty("notEmpty", "false");
         //properties.setProperty("IDENTITY", "MYSQL");
         //mapperScannerConfigurer.setProperties(properties);
+        //mapperScannerConfigurer.setNameGenerator();
         return mapperScannerConfigurer;
     }
 
