@@ -67,21 +67,20 @@
         <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
-            <version>2.4.5</version>
+            <version>${HikariCP.version}</version>
         </dependency>
 
         <!-- 数据连接池 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
-            <version>1.0.18</version>
+            <version>${alibaba.druid.version}</version>
         </dependency>
 
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <!-- 6.0.2 -->
-            <version>5.1.38</version>
+            <version>${mysql.version}</version>
         </dependency>
 
     </dependencies>
@@ -101,7 +100,6 @@
                         <version>1.2.6.RELEASE</version>
                     </dependency>
                 </dependencies>
-
             </plugin>
 
         </plugins>

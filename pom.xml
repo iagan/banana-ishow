@@ -23,6 +23,10 @@
         <mybatis.spring.version>1.3.0</mybatis.spring.version>
         <pagehelper.version>4.1.3</pagehelper.version>
         <mapper.version>3.3.8</mapper.version>
+        <!-- mysql : 6.0.2 -->
+        <mysql.version>5.1.38</mysql.version>
+        <alibaba.druid.version>1.0.18</alibaba.druid.version>
+        <HikariCP.version>2.4.5</HikariCP.version>
     </properties>
 
     <dependencies>
