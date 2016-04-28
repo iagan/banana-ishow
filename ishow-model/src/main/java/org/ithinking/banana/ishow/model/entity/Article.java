@@ -5,6 +5,8 @@ package org.ithinking.banana.ishow.model.entity;
  */
 public class Article {
     private Long articleId;
+    private Long authorId;
+    private String authorName;
     private String title;
     private String content;
 
@@ -14,6 +16,22 @@ public class Article {
 
     public void setArticleId(Long articleId) {
         this.articleId = articleId;
+    }
+
+    public Long getAuthorId() {
+        return authorId;
+    }
+
+    public void setAuthorId(Long authorId) {
+        this.authorId = authorId;
+    }
+
+    public String getAuthorName() {
+        return authorName;
+    }
+
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
     }
 
     public String getTitle() {
