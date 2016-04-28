@@ -37,7 +37,6 @@ public class MyBatisConfig implements TransactionManagementConfigurer {
         bean.setTypeAliasesPackage("org.ithinking.banana.ishow.model");
 
         // SqlSessionFactory 配置
-        // SqlSessionFactory 配置
         org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration();
         configuration.setMapUnderscoreToCamelCase(true);
         bean.setConfiguration(configuration);
