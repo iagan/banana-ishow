@@ -7,7 +7,7 @@ CREATE TABLE is_article (
   article_id          BIGINT(20) NOT NULL AUTO_INCREMENT,
   author_id           BIGINT(20) NOT NULL COMMENT '作者ID',
   author_name         VARCHAR(12) not null COMMENT '作者名称/昵称',
-  title               VARCHAR(32) NOT NULL DEFAULT '' COMMENT '文章/作品表',
+  title               VARCHAR(32) NOT NULL DEFAULT '' COMMENT '文章/作品标题',
   content             VARCHAR(120) NOT NULL COMMENT '文章/作品内容',
   create_time         DATETIME NOT NULL COMMENT '文章创建时间',
   bounty1_total       INT NOT NULL DEFAULT 0 COMMENT '赏金级别1次数(铜赏)',
