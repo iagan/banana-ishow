@@ -24,7 +24,7 @@ import java.net.URL;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
-@IntegrationTest({"server.port=0"})
+@IntegrationTest({"server.port=80"})
 public class ArticleControllerTest {
     @Value("${server.port}")
     private int port;
