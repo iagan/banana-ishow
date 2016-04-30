@@ -6,6 +6,7 @@ import static org.junit.Assert.assertThat;
 import org.ithinking.banana.ishow.Application;
 import org.ithinking.banana.ishow.model.entity.Article;
 import org.ithinking.banana.ishow.service.ArticleService;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -35,9 +36,6 @@ public class ArticleControllerTest {
     private URL base;
     private RestTemplate template;
 
-    @Autowired
-    private ArticleService articleService;
-
     @Before
     public void setUp() throws Exception {
         this.base = new URL("http://localhost:" + port + "/");
@@ -51,8 +49,9 @@ public class ArticleControllerTest {
     }
 
     @Test
-    public void testGetArticleList(){
-        List<Article> articleList = articleService.getArticleList();
-        System.out.println(articleList);
+    public void testGetArticleList() throws Exception {
+        URL url = new URL(base, "/articles");
+        ResponseEntity<String> response = template.getForEntity(url.toString(), String.class);
+        System.out.println(response.getBody());
     }
 }
