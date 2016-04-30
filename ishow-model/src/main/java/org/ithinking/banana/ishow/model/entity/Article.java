@@ -40,6 +40,8 @@ public class Article {
     private String banFlag;
     // 举报累计次数
     private Long tipOffTotal;
+    // 区域代码
+    private String areaCode;
     // 作品创建时间
     private Date createTime;
 
@@ -168,6 +170,15 @@ public class Article {
 
     public void setTipOffTotal(Long tipOffTotal) {
         this.tipOffTotal = tipOffTotal;
+    }
+
+    @Column(name = "area_code", nullable = false)
+    public String getAreaCode() {
+        return areaCode;
+    }
+
+    public void setAreaCode(String areaCode) {
+        this.areaCode = areaCode;
     }
 
     @Column(name = "create_time")

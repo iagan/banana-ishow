@@ -21,6 +21,7 @@ CREATE TABLE is_article (
   ban_flag            CHAR(1) NOT NULL DEFAULT '0' COMMENT '禁止标识(0:未禁止;1:禁止)',
   tip_off_total       INT NOT NULL DEFAULT 0 COMMENT '举报累计次数',
   --
+  area_code           VARCHAR(6) COMMENT '区域代码',
   create_time         DATETIME NOT NULL COMMENT '作品创建时间',
   PRIMARY KEY (article_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '秀才文章作品表';
