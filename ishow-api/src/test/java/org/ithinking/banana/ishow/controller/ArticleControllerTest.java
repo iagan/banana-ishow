@@ -4,9 +4,12 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
 
 import org.ithinking.banana.ishow.Application;
+import org.ithinking.banana.ishow.model.entity.Article;
+import org.ithinking.banana.ishow.service.ArticleService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.IntegrationTest;
 import org.springframework.boot.test.SpringApplicationConfiguration;
@@ -17,6 +20,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URL;
+import java.util.List;
 
 /**
  * @author agan
@@ -31,6 +35,9 @@ public class ArticleControllerTest {
     private URL base;
     private RestTemplate template;
 
+    @Autowired
+    private ArticleService articleService;
+
     @Before
     public void setUp() throws Exception {
         this.base = new URL("http://localhost:" + port + "/");
@@ -41,5 +48,11 @@ public class ArticleControllerTest {
     public void getHello() throws Exception {
         ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
         assertThat(response.getBody(), equalTo("Greetings from Spring Boot!"));
+    }
+
+    @Test
+    public void testGetArticleList(){
+        List<Article> articleList = articleService.getArticleList();
+        System.out.println(articleList);
     }
 }
