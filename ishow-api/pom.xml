@@ -19,6 +19,14 @@
             <version>${project.parent.version}</version>
         </dependency>
 
+        <!-- Spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- Spring boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
