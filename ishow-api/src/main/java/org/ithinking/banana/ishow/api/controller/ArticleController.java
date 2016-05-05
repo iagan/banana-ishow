@@ -55,4 +55,8 @@ public class ArticleController {
     }
 
 
+    // 钻石
+    public void clickDiamond(){
+
+    }
 }
