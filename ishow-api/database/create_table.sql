@@ -10,8 +10,8 @@ CREATE TABLE is_article (
   --
   title               VARCHAR(32) NOT NULL DEFAULT '' COMMENT '文章/作品标题',
   content             VARCHAR(120) NOT NULL COMMENT '文章/作品内容',
-  image_url           VARCHAR(120) NOT NULL COMMENT '作品图片URL',
-  video_url           VARCHAR(120) NOT NULL COMMENT '作品视频URL',
+  image_url           VARCHAR(120)  COMMENT '作品图片URL',
+  video_url           VARCHAR(120)  COMMENT '作品视频URL',
  --
   bounty1_total       INT NOT NULL DEFAULT 0 COMMENT '赏金级别1次数(铜赏.1分)',
   bounty2_total       INT NOT NULL DEFAULT 0 COMMENT '赏金级别2次数(银赏.1毛)',

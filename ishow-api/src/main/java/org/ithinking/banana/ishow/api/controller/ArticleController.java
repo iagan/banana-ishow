@@ -22,4 +22,9 @@ public class ArticleController {
         List<Article> articleList = articleService.getArticleList();
         return articleList;
     }
+
+    public List<Article> getArticlePage(Integer page){
+
+        return null;
+    }
 }

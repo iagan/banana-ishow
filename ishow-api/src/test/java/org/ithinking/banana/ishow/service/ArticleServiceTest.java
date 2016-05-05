@@ -25,4 +25,10 @@ public class ArticleServiceTest {
         List<Article> list = articleService.getArticleList();
         System.out.println(list);
     }
+
+    @Test
+    public void testGetArticlePage(){
+        List<Article> list = articleService.getArticlePage(1);
+        System.out.println(list);
+    }
 }
