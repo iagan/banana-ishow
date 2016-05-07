@@ -7,10 +7,14 @@
 
     <dubbo:application name="ishow-provider" owner="agan" organization="thinking"/>
 
-    <dubbo:registry id="banana-ishow" address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry id="banana-pay" address="zookeeper://127.0.0.1:2181"/>
 
     <!--uncomment this if you want to test dubbo's monitor-->
     <!--<dubbo:monitor protocol="registry"/>-->
+
+    <!-- -->
+    <dubbo:reference id="accountRemoteService" registry="banana-pay" interface="org.ithinking.banana.pay.remote.service.AccountRemoteService" />
+
 
     <!--
     <dubbo:reference id="bidService" interface="com.alibaba.dubbo.demo.bid.BidService"/>

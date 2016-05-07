@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ImportResource;
 
 import java.util.Arrays;
 
@@ -16,6 +17,7 @@ import java.util.Arrays;
 @ComponentScan(basePackages = "org.ithinking.banana")
 //@MapperScan(basePackages = {"org.ithinking.banana.ishow.mapper"})
 @EnableAutoConfiguration
+@ImportResource("classpath:META-INF/spring/dubbo-pay-consumer.xml")
 public class Application {
 
 

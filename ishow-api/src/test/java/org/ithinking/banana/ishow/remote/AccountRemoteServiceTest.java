@@ -7,6 +7,7 @@ import org.ithinking.banana.pay.remote.service.AccountRemoteService;
 import org.ithinking.banana.pay.remote.vo.AccountVo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -20,7 +21,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @SpringApplicationConfiguration(classes = Application.class)
 public class AccountRemoteServiceTest {
 
-    @Reference(registry = Constant.DUBBO_PAY_REGISTRY)
+    //@Reference(registry = Constant.DUBBO_PAY_REGISTRY)
+    @Autowired
     private AccountRemoteService accountRemoteService;
 
     @Test
