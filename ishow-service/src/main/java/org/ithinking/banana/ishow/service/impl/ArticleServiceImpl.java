@@ -32,7 +32,7 @@ public class ArticleServiceImpl implements ArticleService{
     @Override
     public List<Article> getArticlePage(Integer pageNum) {
         //获取第1页，10条内容，默认查询总数count
-        PageHelper.startPage(pageNum, 10);
+       // PageHelper.startPage(pageNum, 10);
         List<Article> result = articleMapper.getArticleList();
         return result;
     }
