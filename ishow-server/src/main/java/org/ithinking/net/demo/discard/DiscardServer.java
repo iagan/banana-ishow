@@ -13,6 +13,8 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 /**
  * 丢弃任何进入的数据
  * https://github.com/waylau/netty-4-user-guide
+ * 测试过程:
+ * telnet localhost 8080
  */
 public class DiscardServer {
 
