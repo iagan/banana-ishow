@@ -12,6 +12,7 @@
         <module>ishow-service</module>
         <module>ishow-model</module>
         <module>ishow-mapper</module>
+        <module>ishow-server</module>
     </modules>
     <packaging>pom</packaging>
 
