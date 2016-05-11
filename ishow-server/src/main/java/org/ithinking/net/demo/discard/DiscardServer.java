@@ -15,6 +15,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  * https://github.com/waylau/netty-4-user-guide
  * 测试过程:
  * telnet localhost 8080
+ * 退出telnet: ctrl + ] -- > quit
  */
 public class DiscardServer {
 
