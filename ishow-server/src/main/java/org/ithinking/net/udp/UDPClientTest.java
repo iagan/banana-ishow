@@ -6,7 +6,8 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
 import java.net.UnknownHostException;
- 
+import java.util.Random;
+
 /**
  * @filename UDPClientTest.java
  * @author code by jianghuiwen
@@ -25,7 +26,7 @@ public class UDPClientTest {
      // 创建发送方的套接字，IP默认为本地，端口号随机  
         DatagramSocket sendSocket = new DatagramSocket();
         // 确定要发送的消息：  
-        String mes = "我是设备！";
+        String mes = "我是设备！" + new Random().nextLong();
         // 由于数据报的数据是以字符数组传的形式存储的，所以传转数据  
         byte[] buf = mes.getBytes("UTF-8");
         // 确定发送方的IP地址及端口号，地址为本地机器地址  
