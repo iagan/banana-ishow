@@ -14,6 +14,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  * 丢弃任何进入的数据
  * https://github.com/waylau/netty-4-user-guide
  * https://github.com/netty/netty/tree/4.0/example/src/main/java/io/netty/example
+ * https://github.com/netty/netty.git
  * 测试过程:
  * telnet localhost 8080
  * 退出telnet: ctrl + ] -- > quit
