@@ -7,6 +7,8 @@ import javax.persistence.Table;
 import java.util.Date;
 
 /**
+ * 作品奖金流水
+ *
  * @author agan
  * @since 2016-04-29
  */

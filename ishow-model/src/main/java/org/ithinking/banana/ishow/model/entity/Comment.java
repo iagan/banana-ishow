@@ -7,6 +7,8 @@ import javax.persistence.Table;
 import java.util.Date;
 
 /**
+ * 作品评价
+ *
  * @author fuchujian
  * @since 2016-04-29
  */
