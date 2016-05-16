@@ -34,6 +34,7 @@
 
         <!-- springloaded -->
         <springloaded.version>1.2.6.RELEASE</springloaded.version>
+        <pay-remote.version>1.0-SNAPSHOT</pay-remote.version>
     </properties>
 
     <dependencies>

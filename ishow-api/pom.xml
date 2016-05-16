@@ -24,7 +24,7 @@
         <dependency>
             <groupId>org.ithinking</groupId>
             <artifactId>pay-remote</artifactId>
-            <version>${project.parent.version}</version>
+            <version>${pay-remote.version}</version>
         </dependency>
 
 
