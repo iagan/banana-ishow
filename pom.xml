@@ -13,6 +13,7 @@
         <module>ishow-model</module>
         <module>ishow-mapper</module>
         <module>ishow-server</module>
+        <module>ishow-test</module>
     </modules>
     <packaging>pom</packaging>
 
